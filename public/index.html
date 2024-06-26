@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="bot-selection">
+            <button class="bot" data-bot="meteo">Bot Météo</button>
+            <button class="bot" data-bot="gifs">Bot GIFs</button>
+            <button class="bot" data-bot="blagues">Bot Blagues</button>
+        </div>
+        <div id="chat-sections">
+            <div id="chat-meteo" class="chat-section active">
+                <ul class="message-list" id="message-list-meteo"></ul>
+                <div class="message-input-container">
+                    <input type="text" class="user-input" id="user-input-meteo" placeholder="Entrez votre message...">
+                    <button class="send-button" id="send-button-meteo">Envoyer</button>
+                </div>
+            </div>
+            <div id="chat-gifs" class="chat-section hidden">
+                <ul class="message-list" id="message-list-gifs"></ul>
+                <div class="message-input-container">
+                    <input type="text" class="user-input" id="user-input-gifs" placeholder="Entrez votre message...">
+                    <button class="send-button" id="send-button-gifs">Envoyer</button>
+                </div>
+            </div>
+            <div id="chat-blagues" class="chat-section hidden">
+                <ul class="message-list" id="message-list-blagues"></ul>
+                <div class="message-input-container">
+                    <input type="text" class="user-input" id="user-input-blagues" placeholder="Entrez votre message...">
+                    <button class="send-button" id="send-button-blagues">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
